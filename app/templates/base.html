@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block extra_css %}{% endblock %}
     <title>{% block title %}My Flask App{% endblock %}</title>
-<!--    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">-->
 </head>
 <body>
     <header>
-        <h1>My Flask App</h1>
         <nav>
             <a href="/">Home</a>
             <a href="/about">About</a>
@@ -17,13 +22,11 @@
     </header>
 
     <main>
-        {% block content %}
-        <!-- Контент будет вставляться здесь -->
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
     <footer>
-        <p>&copy; 2025 My Flask App</p>
+        <p class="footer-text">&copy; 2025 My Flask App</p>
     </footer>
 </body>
 </html>

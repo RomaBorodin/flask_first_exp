@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+    font-weight: 800;
+}
+
+p {
+    text-align: center;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+}
