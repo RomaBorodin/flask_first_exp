@@ -14,4 +14,8 @@
         <li>Vision: Empower people to build their ideas.</li>
         <li>Values: Collaboration, innovation, and learning.</li>
     </ul>
+
+    {% for teammate in team_members %}
+        <p>{{ teammate.name }} - {{ teammate.role }}</p>
+    {% endfor %}
 {% endblock %}

@@ -33,4 +33,16 @@
             <button type="submit">Send</button>
         </form>
     </div>
+
+    <div style="text-align: center">
+        <h2>Контактное лицо</h2>
+        <p>Имя: {{ support.name }}</p>
+        <p>Должность: {{ support.position }}</p>
+        <p>Email: {{ support.email }}</p>
+
+        <h3>Адрес:</h3>
+        <p>{{ support.address.street }}</p>
+        <p>{{ support.address.city }}, {{ support.address.zip }}</p>
+    </div>
+
 {% endblock %}

@@ -12,4 +12,5 @@
     <div class="flask-logo">
         <img src="{{ url_for('static', filename='images/flask-logo.webp') }}" alt="flask logo">
     </div>
+    <h1>Today: {{ current_time.strftime('%A, %B %d, %Y, %H:%M:%S') }}</h1>
 {% endblock %}
